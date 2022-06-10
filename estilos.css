@@ -1,24 +1,29 @@
-*{ box-sizing: border-box;}
+@media (max-width: 614px){
+  
 
-body {
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
     margin: 0 auto;
     font-family: "Roboto", cursive;
-   
-}
-
-.topo {
-    font-family: 'Righteous', cursive;
-    width: 100%;
+    width: 614px;
+    height: 100%;
+  }
+  
+  .topo {
+    background-color: brown;
     height: 92px;
-    background-color: #CF2B2B;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    z-index: 1;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
-}
-
-.titulo {
+    margin: 0 auto;
+  }
+  .titulo {
     font-family: "Righteous";
     color: white;
     font-size: 44px;
@@ -26,92 +31,112 @@ body {
     line-height: 54.63px;
     margin-left: 21px;
     margin-top: 8px;
-}
-
-.subtitulo {
+  }
+  .subtitulo {
     font-family: "Roboto";
     font-size: 18px;
     font-weight: 400px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-left: 21px;
-
-}
-
-.conteudo {
+  }
+  
+  .conteudo {
+    height: 934px;
     margin-top: 92px;
-    height: 100%;
-   background-color: yellow;/*#E5E5E5;*/
-    
-}
-
-.titulo-prato {
+    margin-bottom: 92px;
+    width: 100%;
+    background-color: yellow;
+  }
+  
+  .titulo-item {
     padding-top: 31px;
     margin-left: 19px;
     font-family: "Righteous";
     font-size: 26px;
     font-weight: 400;
     color: #333333;
-}
-
-.selecao-pratos{    
+  }
+  
+  .selecao-item {
     display: flex;
-    height: 22%;
+    height: 216px;
     margin: 17px 19px;
-    background-color: green;/*#E5E5E5;*/
+    background-color: green;
+    /*#E5E5E5;*/
     overflow: hidden;
     justify-content: space-evenly;
-    border-radius: 10px;    
-}
-
-.prato{
-    background-color: red; /* #FFFFFF; */
-    height: 216px;
-    width: 172px; 
-    margin-right:16px;
-    border-radius: 9px; 
-    align-items: center;
-    position: relative;
-}
-
-.foto-prato{
+    border-radius: 10px;
+  }
+  .item {
+    background-color: red;
+    /* #FFFFFF; */
+    padding: 16px;
+    margin: 0 16px;
+    border-radius: 9px;
+  }
+  .foto-item {
     width: 144px;
     height: 87px;
-    margin-top: 18px;
-    margin-left: 14px;
     margin-bottom: 8px;
-    
-}
-.nome-prato{
+    border-radius: 4px;
+  }
+  
+  .nome-item {
     font-size: 16px;
     font-weight: 700;
     color: #333333;
     line-height: 18.75px;
-    margin-left: 15px;
     margin-bottom: 4px;
-}
-.descricao-prato{
+  }
+  
+  .descricao-item {
+    width: 147px;
     font-size: 15px;
     font-weight: 300;
-    color:#A6A6A6;   
+    color: #a6a6a6;
     line-height: 17.58px;
-    height: 39px;
-    width: 80%;
-    margin-left: 15px;
-    margin-bottom: 5px; 
-}
-
-.preco-prato{
+    margin-bottom: 9px;
+  }
+  
+  .preco-item {
     font-size: 16px;
     font-weight: 400;
     color: #000000;
-    margin-left: 15px;
-}
-
-.rodape {
-    width: 100%; 
+    margin-bottom: 16px;
+  }
+  
+  .rodape {
     height: 92px;
+    width: 614px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #ffffff;
     position: fixed;
     bottom: 0;
     left: 0;
-    background-color: orange;
+    z-index: 1;
+    position: fixed;
+  }
+  button {
+    color: #cbcbcb;
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    /* position: absolute;
+    left: 125px;
+    bottom: 16px;
+    border: none */;
+  }
+  span {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+  }
+  
+
 }
