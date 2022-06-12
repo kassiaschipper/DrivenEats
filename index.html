@@ -1,200 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>DrivenEats</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="estilos.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <title>DrivenEats</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="estilos.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <body>
-    <div class="topo">
-      <p class="titulo">DrivenEats</p>
-      <p class="subtitulo">Sua comida em 6 minutos</p>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="topo">
+    <p class="titulo">DrivenEats</p>
+    <p class="subtitulo">Sua comida em 6 minutos</p>
+  </div>
+
+  <div class="conteudo">
+    <div class="titulo-item">
+      <p>Primeiro, seu prato</p>
     </div>
 
-    <div class="conteudo">
-      <div class="titulo-item">
-        <p>Primeiro, seu prato</p>
+    <div class="selecao-item pratos">
+
+      <div class="item" onclick="selecaoPrato(this)">
+        <div class="foto-item">
+          <img src="imagens\hot _doguinho.png" />
+        </div>
+        <div class="nome-item">Hot Doguinho</div>
+        <div class="descricao-item">
+          Nada de purê
+        </div>
+        <div class="preco-item">
+          <div class="preco">R$ 9,90</div> 
+          <div class="check"><img class="check" src="imagens\Vector.png" /></div>
+        </div>
+
       </div>
 
-      <div class="selecao-item">
-        <div class="item">
-          <div class="foto-item">
-            <img src="imagens\hot _doguinho.png" />
-          </div>
-          <div class="nome-item">Hot Doguinho</div>
-          <div class="descricao-item">
-            Nada de purê
-          </div>
-          <div class="preco-item">R$ 9,90</div>
+      <div class="item" onclick="selecaoPrato(this)">
+        <div class="foto-item">
+          <img src="imagens\hamburguinho.png" />
         </div>
-        <div class="item">
-          <div class="foto-item">
-            <img src="imagens\hamburguinho.png" />
-          </div>
-          <div class="nome-item">Hamburguinho</div>
-          <div class="descricao-item">
-            Hamburguinho Delícia
-          </div>
-          <div class="preco-item">R$ 17,90</div>
+        <div class="nome-item">Hamburguinho</div>
+        <div class="descricao-item">
+          Hamburguinho Delícia
         </div>
-        <div class="item">
-          <div class="foto-item">
-            <img src="imagens\polentinha.png" />
-          </div>
-          <div class="nome-item">Polentinha</div>
-          <div class="descricao-item">
-            Polentinha frita 
-          </div>
-          <div class="preco-item">R$ 10,90</div>
-        </div>
-        <div class="item">
-          <div class="foto-item">
-            <img src="imagens\ala_minuta.png" />
-          </div>
-          <div class="nome-item">Ala Minuta</div>
-          <div class="descricao-item">
-            Aquela original
-          </div>
-          <div class="preco-item">R$ 18,90</div>
+        <div class="preco-item"> 
+          <div class="preco">R$ 17,90</div> 
+          <div class="check"><img class="check" src="imagens\Vector.png" /></div>
         </div>
       </div>
 
-      <div class="titulo-item">
-        <p>Agora, sua bebida</p>
-      </div>
-      <div class="selecao-item">
-        <div class="item">
-          <div class="foto-item">
-            <img src="imagens\coquinha_gelada 1.png" />
-          </div>
-          <div class="nome-item">Coquinha gelada</div>
-          <div class="descricao-item">
-            Lata 350ml
-          </div>
-          <div class="preco-item">R$ 4,90</div>
+      <div class="item" onclick="selecaoPrato(this)">
+        <div class="foto-item">
+          <img src="imagens\polentinha.png" />
         </div>
-        <div class="item">
-          <div class="foto-item">
-            <img src="imagens\chimarrao.png" />
-          </div>
-          <div class="nome-item">Chimas</div>
-          <div class="descricao-item">
-            Erva da melhor
-          </div>
-          <div class="preco-item">R$ 3,90</div>
+        <div class="nome-item">Polentinha</div>
+        <div class="descricao-item">
+          Polentinha frita
         </div>
-        <div class="item">
-          <div class="foto-item">
-            <img src="imagens\suco.png" />
-          </div>
-          <div class="nome-item">Suco de Laranja</div>
-          <div class="descricao-item">
-            Tang
-          </div>
-          <div class="preco-item">R$ 1,90</div>
-        </div>
-        <div class="item">
-          <div class="foto-item">
-            <img src="imagens\quentao.png" />
-          </div>
-          <div class="nome-item">Quentão</div>
-          <div class="descricao-item">
-            De vinho barato 
-          </div>
-          <div class="preco-item">R$ 5,90</div>
-        </div>
-        <div class="item">
-          <div class="foto-item">
-            <img src="imagens\cafe.png" />
-          </div>
-          <div class="nome-item">Café preto</div>
-          <div class="descricao-item">
-            Copinho de 250ml
-          </div>
-          <div class="preco-item">R$ 1,90</div>
+        <div class="preco-item">
+          <div class="preco">R$ 10,90</div> 
+          <div class="check"><img class="check" src="imagens\Vector.png" /></div>
         </div>
       </div>
 
-      <div class="titulo-item">
-        <p>Por fim, sua sobremesa</p>
+      <div class="item" onclick="selecaoPrato(this)">
+        <div class="foto-item">
+          <img src="imagens\ala_minuta.png" />
+        </div>
+        <div class="nome-item">Ala Minuta</div>
+        <div class="descricao-item">
+          Aquela original
+        </div>
+        <div class="preco-item">
+          <div class="preco">R$ 18,90</div> 
+          <div class="check"><img class="check" src="imagens\Vector.png" /></div>
+        </div>
       </div>
-      <div class="selecao-item">
-        <div class="item">
-          <div class="foto-item">
-            <img src="imagens\pudim 1.png" />
-          </div>
-          <div class="nome-item">Pudim</div>
-          <div class="descricao-item">
-            Apenas Pudim
-          </div>
-          <div class="preco-item">R$ 7,90</div>
+
+    </div>
+
+    <div class="titulo-item">
+      <p>Agora, sua bebida</p>
+    </div>
+    <div class="selecao-item bebidas">
+      <div class="item" onclick="selecaoBebida(this)">
+        <div class="foto-item">
+          <img src="imagens\coquinha_gelada 1.png" />
         </div>
-        <div class="item">
-          <div class="foto-item">
-            <img src="imagens\pirulitos.png" />
-          </div>
-          <div class="nome-item">Pirulitos Sortidos</div>
-          <div class="descricao-item">
-            Pacote com 10
-          </div>
-          <div class="preco-item">R$ 5,90</div>
+        <div class="nome-item">Coquinha gelada</div>
+        <div class="descricao-item">
+          Lata 350ml
         </div>
-        <div class="item">
-          <div class="foto-item">
-            <img src="imagens\chocolate.png" />
-          </div>
-          <div class="nome-item">Chocolate</div>
-          <div class="descricao-item">
-            Só 90g
-          </div>
-          <div class="preco-item">R$ 20,90</div>
+        <div class="preco-item">
+          <div class="preco">R$ 4,90</div> 
+          <div class="check"><img class="check" src="imagens\Vector.png" /></div>
         </div>
-        <div class="item">
-          <div class="foto-item">
-            <img src="imagens\bala_de_cafe.png" />
-          </div>
-          <div class="nome-item">Bala de café</div>
-          <div class="descricao-item">
-            Aquele pacotão
-          </div>
-          <div class="preco-item">R$ 3,90</div>
+      </div>
+      <div class="item" onclick="selecaoBebida(this)">
+        <div class="foto-item">
+          <img src="imagens\chimarrao.png" />
         </div>
-        <div class="item">
-          <div class="foto-item">
-            <img src="imagens\bolo_cenoura.png" />
-          </div>
-          <div class="nome-item">Bolinho</div>
-          <div class="descricao-item">
-            Cenoura com chocolate
-          </div>
-          <div class="preco-item">R$ 4,90</div>
+        <div class="nome-item">Chimas</div>
+        <div class="descricao-item">
+          Erva da melhor
         </div>
-        
+        <div class="preco-item">
+          <div class="preco">R$ 3,90</div> 
+          <div class="check"><img class="check" src="imagens\Vector.png" /></div>
+        </div>
+      </div>
+      <div class="item" onclick="selecaoBebida(this)">
+        <div class="foto-item">
+          <img src="imagens\suco.png" />
+        </div>
+        <div class="nome-item">Suco de Laranja</div>
+        <div class="descricao-item">
+          Tang
+        </div>
+        <div class="preco-item">
+          <div class="preco">R$ 1,90</div> 
+          <div class="check"><img class="check" src="imagens\Vector.png" /></div>
+        </div>
+      </div>
+      <div class="item" onclick="selecaoBebida(this)">
+        <div class="foto-item">
+          <img src="imagens\quentao.png" />
+        </div>
+        <div class="nome-item">Quentão</div>
+        <div class="descricao-item">
+          De vinho barato
+        </div>
+        <div class="preco-item">R$
+          <div class="preco">R$ 5,90</div> 
+          <div class="check"><img class="check" src="imagens\Vector.png" /></div>
+        </div>
+      </div>
+      <div class="item" onclick="selecaoBebida(this)">
+        <div class="foto-item">
+          <img src="imagens\cafe.png" />
+        </div>
+        <div class="nome-item">Café preto</div>
+        <div class="descricao-item">
+          Copinho de 250ml
+        </div>
+        <div class="preco-item">
+          <div class="preco">R$ 1,90</div> 
+          <div class="check"><img class="check" src="imagens\Vector.png" /></div>
+        </div>
       </div>
     </div>
 
-    <div class="rodape">
-      <button class="botao">
-        <span
-          >Selecione os 3 itens <br />
-          para fechar o pedido</span
-        >
-      </button>
+    <div class="titulo-item">
+      <p>Por fim, sua sobremesa</p>
     </div>
-  </body>
+    <div class="selecao-item sobremesas">
+      <div class="item" onclick="selecaoSobremesa(this)">
+        <div class="foto-item">
+          <img src="imagens\pudim 1.png" />
+        </div>
+        <div class="nome-item">Pudim</div>
+        <div class="descricao-item">
+          Apenas Pudim
+        </div>
+        <div class="preco-item">
+          <div class="preco">R$ 7,90</div> 
+          <div class="check"><img class="check" src="imagens\Vector.png" /></div>
+        </div>
+      </div>
+      <div class="item" onclick="selecaoSobremesa(this)">
+        <div class="foto-item">
+          <img src="imagens\pirulitos.png" />
+        </div>
+        <div class="nome-item">Pirulitos Sortidos</div>
+        <div class="descricao-item">
+          Pacote com 10
+        </div>
+        <div class="preco-item">
+          <div class="preco">R$ 5,90</div> 
+          <div class="check"><img class="check" src="imagens\Vector.png" /></div>
+        </div>
+      </div>
+      <div class="item" onclick="selecaoSobremesa(this)">
+        <div class="foto-item">
+          <img src="imagens\chocolate.png" />
+        </div>
+        <div class="nome-item">Chocolate</div>
+        <div class="descricao-item">
+          Só 90g
+        </div>
+        <div class="preco-item">
+          <div class="preco">R$ 20,90</div> 
+          <div class="check"><img class="check" src="imagens\Vector.png" /></div>
+        </div>
+      </div>
+      <div class="item" onclick="selecaoSobremesa(this)">
+        <div class="foto-item">
+          <img src="imagens\bala_de_cafe.png" />
+        </div>
+        <div class="nome-item">Bala de café</div>
+        <div class="descricao-item">
+          Aquele pacotão
+        </div>
+        <div class="preco-item">
+          <div class="preco">R$ 6,90</div> 
+          <div class="check"><img class="check" src="imagens\Vector.png" /></div>
+        </div>
+      </div>
+      <div class="item" onclick="selecaoSobremesa(this)">
+        <div class="foto-item">
+          <img src="imagens\bolo_cenoura.png" />
+        </div>
+        <div class="nome-item">Bolinho</div>
+        <div class="descricao-item">
+          Cenoura com chocolate
+        </div>
+        <div class="preco-item">
+          <div class="preco">R$ 4,90</div> 
+          <div class="check"><img class="check" src="imagens\Vector.png" /></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="rodape">
+    <button class="botao">
+      <span class="mensagem">Selecione os 3 itens <br />
+        para fechar o pedido</span>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+
 </html>

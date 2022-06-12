@@ -1,16 +1,16 @@
-@media (max-width: 614px){
-  
-* {
+@media (max-width: 614px) {
+
+  * {
     box-sizing: border-box;
   }
-  
+
   body {
     margin: 0 auto;
     font-family: "Roboto", cursive;
     width: 614px;
     height: 100%;
   }
-  
+
   .topo {
     background-color: brown;
     height: 92px;
@@ -19,9 +19,10 @@
     top: 0;
     left: 0;
     z-index: 1;
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
     margin: 0 auto;
   }
+
   .titulo {
     font-family: "Righteous";
     color: white;
@@ -31,6 +32,7 @@
     margin-left: 21px;
     margin-top: 8px;
   }
+
   .subtitulo {
     font-family: "Roboto";
     font-size: 18px;
@@ -38,7 +40,7 @@
     color: #FFFFFF;
     margin-left: 21px;
   }
-  
+
   .conteudo {
     height: 934px;
     margin-top: 92px;
@@ -46,7 +48,7 @@
     width: 100%;
     background-color: #E5E5E5;
   }
-  
+
   .titulo-item {
     padding-top: 31px;
     margin-left: 19px;
@@ -55,58 +57,83 @@
     font-weight: 400;
     color: #333333;
   }
-  
+
   .selecao-item {
     display: flex;
-    height: 216px;
+    height: 218px;
     margin: 17px 19px;
     background-color: #E5E5E5;
     overflow-x: scroll;
     border-radius: 10px;
   }
-  .item {
-    background-color:#FFFFFF;
-    padding: 16px;
-    margin: 0 16px;
+
+  .selecionado {
+    border: 4px solid green;
     border-radius: 9px;
-  }
+    }
+
+  .item {
+    background-color: #FFFFFF;
+    border-radius: 9px;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 17px;
+    padding: 8px;
+    }
+
+
 
   .foto-item img {
     width: 144px;
     height: 87px;
     margin-bottom: 8px;
     border-radius: 4px;
-  }
-  
+     }
+
   .nome-item {
     font-size: 16px;
     font-weight: 700;
     color: #333333;
     line-height: 18.75px;
     margin-bottom: 4px;
+    margin-top: 10px;
   }
-  
+
   .descricao-item {
     width: 147px;
     font-size: 15px;
     font-weight: 300;
     color: #a6a6a6;
     line-height: 17.58px;
-    margin-bottom: 9px;
+    margin-top: 15px;
+    
   }
-  
+
   .preco-item {
+    height: 20px;
+    margin-top: 15px;
+    display: flex;
+  }
+  .preco {
+    width: 66px;
+    height: 19px;
     font-size: 16px;
     font-weight: 400;
     color: #000000;
     margin-bottom: 16px;
   }
-  
+
+  .check{
+    width: 16px;
+    height: 16px;
+    margin-left: 30px;
+    visibility: hidden;
+  }
+
   .rodape {
     height: 92px;
     width: 614px;
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
     align-items: center;
     background-color: #ffffff;
     position: fixed;
@@ -115,6 +142,7 @@
     z-index: 1;
     position: fixed;
   }
+
   button {
     background-color: #CBCBCB;
     width: 364px;
@@ -122,7 +150,12 @@
     border-radius: 50px;
     border: none;
   }
-  span {
+
+  .botao-verde{
+    background-color: green;
+     }
+  
+     span {
     color: #ffffff;
     font-family: "Roboto";
     font-weight: 400;
@@ -131,6 +164,6 @@
     text-align: center;
     letter-spacing: 0.018em;
   }
-  
+
 
 }
