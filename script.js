@@ -75,7 +75,7 @@ function botaoVerde() {
         botao.classList.add("botao-verde");
         mensagem.innerHTML = "Fazer Pedido";
 
-       
+
     }
 
 }
@@ -125,6 +125,74 @@ function pedidoFechado() {
     opacidadeRodape.classList.add("opacidade");
 }
 
+function mandarWhatsapp() {
+
+    let pratoPedido = document.querySelector(".pratos .selecionado");
+    let bebidaPedida = document.querySelector(".bebidas .selecionado");
+    let sobremesaPedida = document.querySelector(".sobremesas .selecionado");
+
+    let nomePratoPedido = pratoPedido.querySelector(".nome-item");
+    let precoPratoPedido = pratoPedido.querySelector(".preco");
+
+    let nomePratoFechado = document.querySelector(".prato-escolhido");
+    nomePratoFechado.innerHTML = nomePratoPedido.innerHTML;
+    let precoPratoFechado = document.querySelector(".preco-prato-escolhido");
+    precoPratoFechado.innerHTML = precoPratoPedido.innerHTML;
+
+    let nomeBebidaPedida = bebidaPedida.querySelector(".nome-item");
+    let precoBebidaPedida = bebidaPedida.querySelector(".preco");
+
+    let nomeBebidaFechada = document.querySelector(".bebida-escolhida");
+    nomeBebidaFechada.innerHTML = nomeBebidaPedida.innerHTML;
+    let precoBebidaFechada = document.querySelector(".preco-bebida-escolhida");
+    precoBebidaFechada.innerHTML = precoBebidaPedida.innerHTML;
+
+    let nomeSobremesaPedida = sobremesaPedida.querySelector(".nome-item");
+    let precoSobremesaPedida = sobremesaPedida.querySelector(".preco");
+
+    let nomeSobremesaFechada = document.querySelector(".sobremesa-escolhida");
+    nomeSobremesaFechada.innerHTML = nomeSobremesaPedida.innerHTML;
+    let precoSobremesaFechada = document.querySelector(".preco-sobremesa-escolhida");
+    precoSobremesaFechada.innerHTML = precoSobremesaPedida.innerHTML;
+
+    let totalPedidoFechado = document.querySelector(".preco-total");
+    let valorPrato = Number(precoPratoFechado.innerHTML);
+    let valorBebida = Number(precoBebidaFechada.innerHTML);
+    let valorSobremesa = Number(precoSobremesaFechada.innerHTML);
+    let valorTotal = (valorPrato + valorBebida + valorSobremesa).toFixed(2);
+    totalPedidoFechado.innerHTML = "R$ " + valorTotal;
+
+
+    const nome = prompt('Digite seu nome: ');
+    const endereco = prompt('Digite seu endereço: ');
+
+
+    let textoPedidoWhats = `
+            Olá, gostaria de fazer o pedido:
+            - Prato: ${nomePratoFechado.innerHTML}
+            - Bebida: ${nomeBebidaFechada.innerHTML}
+            - Sobremesa: ${nomeSobremesaFechada.innerHTML}
+            Total: R$ ${valorTotal}
+    
+            Nome: ${nome}
+            Endereço: ${endereco}
+            `;
+
+    const linkFomatado = encodeURIComponent(textoPedidoWhats, "_blank");
+    const linkWhats = "https://wa.me/5551999466065?text=" + `${linkFomatado}`;
+
+    window.open(linkWhats);
+
+}
 function cancelarPedido() {
+    let removeEscondido = document.querySelector(".finalizar-pedido")
+    removeEscondido.classList.add("escondido");
+    let opacidade = document.querySelector(".conteudo");
+    opacidade.classList.remove("opacidade");
+    let opacidadeTopo = document.querySelector(".topo");
+    opacidadeTopo.classList.remove("opacidade");
+    let opacidadeRodape = document.querySelector(".rodape");
+    opacidadeRodape.classList.remove("opacidade");
+
 
 };
