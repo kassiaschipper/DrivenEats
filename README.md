@@ -1,7 +1,7 @@
 # DrivenEats
 ## Projeto #3 - Bootcamp Driven. 
 
-Este pojeto usando JavaScript é a implementação do site mobile do DrivenEats, um restaurante especial que entrega seu pedido em 6 minutos.
+Este projeto usando JavaScript, é a implementação do site mobile do DrivenEats, um restaurante especial que entrega seu pedido em 6 minutos.
 
 Para isso, o restaurante só trabalha com um tipo específico de pedido: o combo de Prato+Bebida+Sobremesa.
 
